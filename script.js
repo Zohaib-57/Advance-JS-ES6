@@ -14,30 +14,31 @@
 //   testVar();
   
             // LET
-  function testLet() {
-    let y = 10;
-    if (true) {
-      let y = 20; 
-      console.log(y);
-    }
-    console.log(y); 
-  }
-  testLet();
+  // function testLet() {
+  //   let y = 10;
+  //   if (true) {
+  //     let y = 20; 
+  //     console.log(y);
+  //   }
+  //   console.log(y); 
+  // }
+  // testLet();
 
-// CONST
-const array = ["apple","guava","banana","Grapes"]
-console.log(array);
-//const array = ["1","2","3","4"];   //cannot be reassigned or redeclared
-function testConst(){
-console.log(array2);
-array.push("")
-}
-//array2.push("5")   //cannot be accessed outside the block
-testConst();
+// // CONST
+// const array = ["apple","guava","banana","Grapes"]
+// console.log(array);
+// //const array = ["1","2","3","4"];   //cannot be reassigned or redeclared
+// function testConst(){
+// console.log(array2);
+// array.push("")
+// }
+// //array2.push("5")   //cannot be accessed outside the block
+// testConst();
 
 
 
-// // function closure
+// function closure  : creating the function inside  the function with lexiical scope
+// Example # 01
 //   function outerFunction() {
 //     const outerVar = 'I am outside!';
 //     function innerFunction() {
@@ -48,10 +49,21 @@ testConst();
 //   const myClosure = outerFunction();
 //   myClosure(); 
 //   // innerFunction();  cannot be accessed
+// Example # 02
+//  function addNum(){
+//   let a = 10;
+//   let b = 20;
+//    function sum() {
+//     console.log(a + b);
+//    }
+//    return sum();
+//  }
+//  addNum();
 
 
-  
 // //  template literals
+// Before ES6, you use single quotes (') or double quotes (") to wrap a string literal, which has very limited functionality.
+// In ES6, you create a template literal by wrapping your text in backticks (`)   
 // //   const name = 'Zohaib';
 // // const greeting = `Hello, ${name}! How are you?`;
 // // console.log(greeting);
@@ -60,9 +72,12 @@ testConst();
 // // const message = `This is line 1
 // // This is line 2
 // // This is line 3`;
-// // console.log(message);
+// // console.log(message)
 
-// // Array destructing 
+// DESTRUCTING
+// The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.The destructuring assignment uses similar syntax but uses it on the left-hand side of the assignment instead. It defines which values to unpack from the sourced variable.
+
+// Array destructing 
 // const colors = ['red', 'green', 'blue'];
 // const [firstColor, secondColor,thridcolor] = colors;
 // console.log(firstColor); 
