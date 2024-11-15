@@ -1,9 +1,8 @@
 //  ES6
 
 // variable Scoping :- refers to the accesibilty of the variable in a program or function
-
 //  let , Var  , const 
-
+          //VAR
 // function testVar() {
 //     var x = 10;
 //     if (true) {
@@ -14,49 +13,61 @@
 //   }
 //   testVar();
   
-
-  // function testLetConst() {
-  //   let y = 10;
-  //   if (true) {
-  //     let y = 20; 
-  //     console.log(y);
-  //   }
-  //   console.log(y); 
-  // }
-  // testLetConst();
-
-
-// function closure
-  function outerFunction() {
-    const outerVar = 'I am outside!';
-    function innerFunction() {
-      console.log(outerVar);
+            // LET
+  function testLet() {
+    let y = 10;
+    if (true) {
+      let y = 20; 
+      console.log(y);
     }
-    return innerFunction;
+    console.log(y); 
   }
-  const myClosure = outerFunction();
-  myClosure(); 
-  // innerFunction();  cannot be accessed
+  testLet();
+
+// CONST
+const array = ["apple","guava","banana","Grapes"]
+console.log(array);
+//const array = ["1","2","3","4"];   //cannot be reassigned or redeclared
+function testConst(){
+console.log(array2);
+array.push("")
+}
+//array2.push("5")   //cannot be accessed outside the block
+testConst();
+
+
+
+// // function closure
+//   function outerFunction() {
+//     const outerVar = 'I am outside!';
+//     function innerFunction() {
+//       console.log(outerVar);
+//     }
+//     return innerFunction;
+//   }
+//   const myClosure = outerFunction();
+//   myClosure(); 
+//   // innerFunction();  cannot be accessed
 
 
   
-//  template literals
-//   const name = 'Zohaib';
-// const greeting = `Hello, ${name}! How are you?`;
-// console.log(greeting);
+// //  template literals
+// //   const name = 'Zohaib';
+// // const greeting = `Hello, ${name}! How are you?`;
+// // console.log(greeting);
 
-//  multiline string
-// const message = `This is line 1
-// This is line 2
-// This is line 3`;
-// console.log(message);
+// //  multiline string
+// // const message = `This is line 1
+// // This is line 2
+// // This is line 3`;
+// // console.log(message);
 
-// Array destructing 
-const colors = ['red', 'green', 'blue'];
-const [firstColor, secondColor,thridcolor] = colors;
-console.log(firstColor); 
-console.log(secondColor); 
-console.log(thridcolor)
+// // Array destructing 
+// const colors = ['red', 'green', 'blue'];
+// const [firstColor, secondColor,thridcolor] = colors;
+// console.log(firstColor); 
+// console.log(secondColor); 
+// console.log(thridcolor)
 
 
 // object Destructing
