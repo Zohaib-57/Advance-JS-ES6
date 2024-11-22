@@ -92,8 +92,8 @@
 // console.log(age); 
 
 
-
-// Default parameter
+// Default parameter:- When you don't assign the arguments to teh parameter decalred in the function 
+// and there assign the default value to the parameter of function....incase of undefined arguments the parameter will retrun the default value...
 // function greet(name = 'Guest') {
 //     console.log(`Hello, ${name}!`);
 //   }
@@ -106,15 +106,14 @@
 //   console.log(multiply(5)); // Output: 10
 //   console.log(multiply(5, 3)); // Output: 15
   
-  
-
+// Spread Operator:- Spread operator allow us to combine two array with each other
 // spread operator
 //   const arr1 = [1, 2, 3];
 // const arr2 = [...arr1, 4, 5];
 // console.log(arr2); 
 
 
-
+// ARROW FUCNTION :- A higher order fucntion that is used as callback function.it is alternative way to write the shorter syntax  
 // arrow function
 // const add = (a, b) => a + b;
 // console.log(add(5, 3));
@@ -128,4 +127,47 @@
 // }, 1000);
 //   }
 //   new timer(); 
-  
+
+
+
+
+// ENHANCED OBJECT LITERLAS
+
+var name = "ali"
+var age = 34;
+var salary = 67000;
+var emp = {
+  name : name,
+  age: age,
+  salary: salary
+}
+console.log(emp);
+
+// you can use both varibales and objects both as once
+
+let name2 = "ahmed"
+   let age2 = 45
+   let salary2 = 34000
+   let emp2 = {
+    name2,
+    age2,
+    salary2
+   }
+   console.log(emp2);
+   
+//you can also add the function name as object key
+
+let name3 = "khan"
+let age3 = 78
+let emp3 ={
+  name3,
+  age3,
+  showName : function(){
+    console.log(`Hello this is me ! ${name3}`);
+  }
+}
+console.log(emp3);
+emp3.showName();
+
+// ITERAOTRS AND FOR...OF
+
