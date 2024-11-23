@@ -233,8 +233,81 @@
     // });
     
     //sort()
-     let sampleArray = [2,36,7,8,9,4,5,6,33];
-     let newArray = sampleArray.sort((num1, num2)=>{
-return num1<num2 ? -1 : 1;
-     }); 
-    console.log(newArray);
+    //  let sampleArray = [2,36,7,8,9,4,5,6,33];
+    //  let newArray = sampleArray.sort((num1, num2)=>{
+    //   return num1<num2 ? -1 : 1;
+    //  }); 
+    // console.log(newArray);
+
+    // shift() 
+    // let array = [12,3,4,5,6,7,8,9];
+    // array.shift();
+    // console.log(array);
+    
+    // // unshift()
+    // let nextArray = [2,3,4,5,6,7,8,9];
+    // nextArray.unshift(1);
+    // console.log(nextArray);
+
+    // push()
+    // let pushedArray = [12,34,56,78,90]
+    // pushedArray.push(100);
+    // console.log(pushedArray);
+  
+    // // pop()
+    // let popArray =[34,56,78,89,90,100];
+    // popArray.pop();
+    // console.log(popArray);
+    
+    // reverse()
+    let personNames =["John", "peterson", "halen", "johanathn"];
+    let reversedNames = personNames.reverse();
+    console.log(reversedNames);
+
+    // slice()
+    let theArray = [1,2,3,4,5,6,7]
+    let slicedArray = theArray.slice(1,4)
+    console.log(slicedArray);
+
+    // fill()
+    let filledArray = new Array(5).fill("dump");
+    console.log(filledArray);
+
+    // indexof()
+    let index = theArray.indexOf(5);
+    console.log(index);
+
+    // findIndex()
+    let findIndex = theArray.findIndex(num => num > 5);
+    console.log(findIndex);
+
+    // includes()
+    let includes = theArray.includes(5);
+    console.log(includes);
+
+    // every()
+    let every = theArray.every(num => num > 0);
+    console.log(every);
+
+    // some()
+    let some = theArray.some(num => num > 5);
+    console.log(some);
+
+    // reduce()
+    let reduce = theArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    console.log(reduce);
+
+    // join()
+    let joinedArray = theArray.join("-");
+    console.log(joinedArray);
+    
+    // concat()
+    let array1 = [1,2,3];
+    let array2 = [4,5,6];
+    let concatArray = array1.concat(array2);
+    console.log(concatArray);
+   
+    // forEach()
+    array1.forEach(num => console.log(num));
+
+    
