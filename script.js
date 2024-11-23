@@ -225,9 +225,16 @@
 
       // filter()
 
-    let array = [1 ,2,3,4,5,6,7,8,9];
-    let filteredArray  = array.filter((number)=>{
-      if(number % 2 == 1){
-        console.log(number);
-        }
-    });
+    // let array = [1 ,2,3,4,5,6,7,8,9];
+    // let filteredArray  = array.filter((number)=>{
+    //   if(number % 2 == 1){
+    //     console.log(number);
+    //     }
+    // });
+    
+    //sort()
+     let sampleArray = [2,36,7,8,9,4,5,6,33];
+     let newArray = sampleArray.sort((num1, num2)=>{
+return num1<num2 ? -1 : 1;
+     }); 
+    console.log(newArray);
