@@ -114,6 +114,12 @@
 
 
 // ARROW FUCNTION :- A higher order fucntion that is used as callback function.it is alternative way to write the shorter syntax  
+
+// callback function syntax
+// ()=>{
+// }
+
+
 // arrow function
 // const add = (a, b) => a + b;
 // console.log(add(5, 3));
@@ -133,41 +139,95 @@
 
 // ENHANCED OBJECT LITERLAS
 
-var name = "ali"
-var age = 34;
-var salary = 67000;
-var emp = {
-  name : name,
-  age: age,
-  salary: salary
-}
-console.log(emp);
+// var name = "ali"
+// var age = 34;
+// var salary = 67000;
+// var emp = {
+//   name : name,
+//   age: age,
+//   salary: salary
+// }
+// console.log(emp);
 
 // you can use both varibales and objects both as once
 
-let name2 = "ahmed"
-   let age2 = 45
-   let salary2 = 34000
-   let emp2 = {
-    name2,
-    age2,
-    salary2
-   }
-   console.log(emp2);
+// let name2 = "ahmed"
+//    let age2 = 45
+//    let salary2 = 34000
+//    let emp2 = {
+//     name2,
+//     age2,
+//     salary2
+//    }
+//    console.log(emp2);
    
 //you can also add the function name as object key
 
-let name3 = "khan"
-let age3 = 78
-let emp3 ={
-  name3,
-  age3,
-  showName : function(){
-    console.log(`Hello this is me ! ${name3}`);
-  }
-}
-console.log(emp3);
-emp3.showName();
+// let name3 = "khan"
+// let age3 = 78
+// let emp3 ={
+//   name3,
+//   age3,
+//   showName : function(){
+//     console.log(`Hello this is me ! ${name3}`);
+//   }
+// }
+// console.log(emp3);
+// emp3.showName();
 
 // ITERAOTRS AND FOR...OF
 
+
+
+//ARRAY METHODS
+
+// Map()
+// let array = ['ali' , 'khan' ,'zohaib']
+// let myMap = array.map((i) =>{
+//   if(i === 'ali'){
+//     return i.toUpperCase()
+//   }
+//   return i;
+// });
+// console.log(myMap);
+
+
+      // let objectArray = [
+      // {
+      //   name: 'ali',
+      //   age: 34
+      // },
+      // {
+      //   name: 'khan',
+      //   age: 45
+      // },
+      // {
+      //   name: 'zohaib',
+      //   age: 35
+      // }];
+      // let newObject = objectArray.map((objectItem) =>{ 
+      //   if(objectItem.age === 34){
+      //     return objectItem;
+      //   }
+      // });
+      // console.log(newObject);
+
+
+      // forEach()
+
+      // let newArray = [1,2,3,4,5,6,7,8,9];
+      // let returnArray = newArray.forEach((item) =>{
+      //   if(item % 2 == 0){
+      //     console.log(item);
+      //   }
+      // });
+      // console.log(returnArray);
+
+      // filter()
+
+    let array = [1 ,2,3,4,5,6,7,8,9];
+    let filteredArray  = array.filter((number)=>{
+      if(number % 2 == 1){
+        console.log(number);
+        }
+    });
