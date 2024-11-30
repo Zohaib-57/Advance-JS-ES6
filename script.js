@@ -470,17 +470,52 @@
 // }
 
 // real life example
-// let myPromise= new Promise((resolve, reject) => {
-//   console.log("Fectching the Data");
-//   let complete  = true
-//   setTimeout(()=>{
+// let myPromise = new Promise((resolve, reject) => {
+//   console.log("Fetching the Data");
+
+//   // Simulate async data fetching
+//   setTimeout(() => {
 //     $.get("https://jsonplaceholder.typicode.com/posts")
-//   },function(data){
-//       console.log(data);
-//   }) 
-// })
-// myPromise.then((success)=>{
-//   console.log("I am successful"); 
-// }),(error)=>{
-//   console.log("i am faing error");
-// }
+//       .done((data) => {
+//         resolve(data); // Resolve the promise with the data
+//       })
+//       .fail((error) => {
+//         reject(error); // Reject the promise with the error
+//       });
+//   }, 1000); // Add a delay to simulate async behavior
+// });
+// // Handle the promise resolution and rejection
+// myPromise
+//   .then((success) => {
+//     console.log("I am successful");
+//     console.log(success); // Log the data received
+//   })
+//   .catch((error) => {
+//     console.log("I am facing an error");
+//     console.error(error); // Log the error
+//   });
+
+
+// CLASSES
+// Classes are a template for creating objects. They encapsulate data with code to work on that data.
+// Methods in classes are code to perfomr the specific tasks..
+// contructor:-Sometimes we need to create many objects of the same type.To create an object type we use an object constructor function.It is considered good practice to name constructor functions with an upper-case first letter.
+// Syntax
+class Emp {
+  constructor(name, age) { //constructor method
+      this.name = name; 
+      this.age = age;
+  }
+}
+const emp1 = new Emp("zohaib", "23 years");
+console.log(emp1.name);
+console.log(emp1.age);
+
+//Method Example
+class instrution{
+  message(){
+    console.log("Follow the rules");
+  }
+}
+ let inst1 = new instrution();
+ inst1.message()
