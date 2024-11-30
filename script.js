@@ -402,9 +402,42 @@
     // console.log(concatArray);
    
 
+    // HIGHER ORDER FUNCTION :- a function that takes another functin as argument
+    // Callback function, passed as a parameter in the higher order function
+
+    // SYNTAX
+// function callbackFunction(){
+//   console.log('I am  a callback function');
+// }
+
+// higher order function
+// function higherOrderFunction(func){
+//   console.log('I am higher order function')
+//   func()
+// }
+// EXAMPLE
+  // here the function add is a callback fucntion
+
+// higherOrderFunction(callbackFunction);
+//      function highFucntion(a , b , add){
+//       let sum = a + b;
+//       add(sum)
+//    } 
+//     highFucntion(23,40,(res)=>console.log(res));
+
+  // EXPONENTIATION OPERATORS:-The exponentiation operator (**) raises the first operand to the power of the second operand : x ** y produces the same result as Math.pow(x, y)
+//   let x = 5;
+// let z = x ** 2; // result is 25
+
+
+
 //PROMISES :- Promisses are mainly used for API's Calling    e.g sometimes webistes going to  the laoding state...
+// promise has three states "Pending" , "Reject" , "FullFilled"
+// Followed by two fucntion resolve()
+//  and reject()... If you Promise is fullfilled we used then() method to output our result else we use catch() method to catch the failed promise or error
+// The Two states fllfilled and rejected has been defined below using the code
 // let myPromise = new Promise(function(myResolve, myReject) {
-//   let x = 0;
+//   // let x = 1;
 //   if (x % 2 == 0) {
 //     myResolve("OK");
 //   } else {
@@ -413,6 +446,41 @@
 // });
 // myPromise.then((success)=>{
 //   console.log("Success Message")
-// }),(error)=>{console.log("Error Message")};
+// })
+// myPromise.catch((err)=>{
+//   console.log("Error Message");
+// })
 
-    
+
+// The pending state of the promise-- it take the time interval methods
+// let myPromise= new Promise((resolve, reject) => {
+//   console.log("Fectching the Data");
+//   let complete  = true
+//   setTimeout(()=>{
+//     if(complete){
+//       resolve("t a succesfull")
+//     }
+//     reject("i am failed")
+//   },3000) 
+// })
+// myPromise.then((success)=>{
+//   console.log("I am successful"); 
+// }),(error)=>{
+//   console.log("i am faing error");
+// }
+
+// real life example
+// let myPromise= new Promise((resolve, reject) => {
+//   console.log("Fectching the Data");
+//   let complete  = true
+//   setTimeout(()=>{
+//     $.get("https://jsonplaceholder.typicode.com/posts")
+//   },function(data){
+//       console.log(data);
+//   }) 
+// })
+// myPromise.then((success)=>{
+//   console.log("I am successful"); 
+// }),(error)=>{
+//   console.log("i am faing error");
+// }
