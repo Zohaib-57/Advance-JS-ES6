@@ -220,7 +220,7 @@
 //      ...
 // }
 // These fucnvtion work same as the iterators...
- function *myFunction(){
+//  function *myFunction(){
 // setting the value using the arguments 
   // let result = yield;
   // console.log(result);
@@ -238,7 +238,7 @@
   // while(true){
   //   yield(newNum++)
   // }
- }
+//  }
     // let  f = myFunction();
     // console.log(f.next());
     // console.log(f.next());
@@ -251,11 +251,28 @@
     // f.next("ali")
     // f.next(7.87)
 
+//we can also use the spread operator in the gnerators 
+
 //  use of for of () loop in generators
 // let f = myFunction()
 // for( let x of f){
 //   console.log(x)
 // }
+
+
+
+// MODULES
+// JavaScript Modules enables you to divide your code into multiple files which makes it easier to maintain a code-base.
+// Modules are imported using the import statement from the external files.
+// Modules use type=”module” in the <script> tag to enable import and export features.
+// i have exported this array to teh script-2 file..
+    // export let myArray = [2,4,6,8,10,12]
+    //  export let  myArray2= [2,4,6,8,10,12,"ali"];
+
+// export default function() {
+//   console.log("Hello! i am exported default");
+// }
+// we can also use the aggreagte moduling  
 
 
 //ARRAY METHODS
