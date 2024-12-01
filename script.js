@@ -500,22 +500,103 @@
 // Classes are a template for creating objects. They encapsulate data with code to work on that data.
 // Methods in classes are code to perfomr the specific tasks..
 // contructor:-Sometimes we need to create many objects of the same type.To create an object type we use an object constructor function.It is considered good practice to name constructor functions with an upper-case first letter.
-// Syntax
-class Emp {
-  constructor(name, age) { //constructor method
-      this.name = name; 
-      this.age = age;
-  }
-}
-const emp1 = new Emp("zohaib", "23 years");
-console.log(emp1.name);
-console.log(emp1.age);
+// // Syntax
+// class Emp {
+//   constructor(name, age) { //constructor method
+//       this.name = name; 
+//       this.age = age;
+//   }
+// }
+// const emp1 = new Emp("zohaib", "23 years");
+// console.log(emp1.name);
+// console.log(emp1.age);
 
 //Method Example
-class instrution{
-  message(){
-    console.log("Follow the rules");
-  }
-}
- let inst1 = new instrution();
- inst1.message()
+// class instrution{
+//   message(){
+//     console.log("Follow the rules");
+//   }
+// }
+//  let inst1 = new instrution();
+//  inst1.message()
+
+
+//class inheritance:-
+// The super() method refers to the parent class.
+// By calling the super() method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.
+// class Car {
+//   constructor(brand) {
+//     this.carname = brand;
+//   }
+//   present() {
+//     return 'I have a ' + this.carname;
+//   }
+// }
+// class Model extends Car {
+//   constructor(brand, mod) {
+//     super(brand);
+//     this.model = mod;
+//   }
+//   show() {
+//     return this.present() + ', it is a ' + this.model;
+//   }
+// }
+
+// const myCar = new Model("Ford", "Mustang");
+// console.log(myCar.show());
+
+
+// TERNARY OPERATORS:- work same as lie if() elseif() statments.
+//  syntax:--->          condition ? exprIfTrue : exprIfFalse
+// Example
+// let value = true;
+//   value=true ? console.log(true) : console.log(false);
+// Example
+        // const num = [23.,45,67,78,89,98];
+        // for(let x of [...num]){
+        //   x % 2 === 0 ? console.log(`Even ${x}`)
+        //   : console.log(`Odd ${x}`);
+        // }
+//  Handling the null Values
+//  const greeting = (person) => {
+//   const name = person ? person.name : "stranger";
+//   return `Howdy, ${name}`;
+// };
+// console.log(greeting({ name: "Alice" })); // "Howdy, Alice"
+// console.log(greeting(null)); // "Howdy, stranger"
+
+//OPTIONAL CHAINING:- The optional chaining (?.) operator accesses an object's property or calls a function. If the object accessed or function called using this operator is undefined or null, the expression short circuits and evaluates to undefined instead of throwing an error.qweeeee
+// let myObj = {
+//   name: "zohaib",
+//   age:23,
+//   ftn: ()=>{
+//     console.log("Hello world");
+//   }
+// }
+// console.log(myObj?.name);
+// console.log(myObj?.ftn());
+// console.log(myObj?.address);
+
+
+// FETCH()
+// The Fetch API provides a JavaScript interface for making HTTP requests and processing the responses.
+// To make a request, call fetch(), passing in:-
+// a definition of the resource to fetch. This can be any one of:
+// a string containing the URL
+// an object, such an instance of URL, which has a stringifier that produces a string containing the URL
+
+// fetch("https://jsonplaceholder.typicode.com/users").then((response)=>response.json()).then((data)=>console.log(data))
+
+// ASYNC ADN AWAIT FUNCTIONS:-
+// The async function declaration creates a binding of a new async function to a given name. The await keyword is permitted within the function body, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains.
+// These fucntions can be use with fecth api's
+  // async function test(){
+  //   console.log("2");
+  // await console.log("3");
+  //   console.log("4");
+  // }
+
+  // console.log("1");
+  // test();
+  // console.log("5");
+    
